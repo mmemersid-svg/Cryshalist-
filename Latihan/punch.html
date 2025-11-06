@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesi Latihan Pukulan</title>
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+     <link rel="stylesheet" href="punch_style.css">
+</head>
+<body>
+    <div class="header-bar">
+<button id="exit-btn" class="close-btn"> 
+    <a href="../index.html">
+        <i class="ri-close-line"></i>
+        EXIT
+    </a>
+</button>
+    </div>
+
+    <div id="settings-level">
+        <label for="level-select">Pilih Level:</label>
+        <select id="level-select">
+            <option value="none" disabled selected>-- Pilih Mode --</option>
+            <option value="easy">Easy (5 Menit)</option>
+            <option value="medium">Medium (3 Menit)</option>
+            <option value="hard">Hard (1 Menit)</option>
+        </select>
+    </div>
+    
+    <div class="content-container">
+        <div id="target-power-card" class="info-card">
+            TARGET : <span id="display-target">0</span><br> 
+            POWER : <span id="display-power">0</span>
+        </div>
+
+        <div id="timer-display" class="timer-large">
+            00:00
+        </div>
+
+        <div class="session-status">
+            <span id="session-message">Start</span>
+            
+            <p class="hits-counter">
+                Hits: <span id="punch-count">0</span>
+            </p>
+        </div>
+        
+        <button id="start-sesi-btn" class="control-btn primary">
+            Mulai Sesi
+        </button>
+
+    </div> 
+
+    <script src="training_punch.js"></script>
+</body>
+</html>

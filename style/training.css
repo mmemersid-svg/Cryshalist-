@@ -1,0 +1,101 @@
+/* projects besar.zip/projects besar/style/training.css */
+
+.training-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.training-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.training-card {
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  min-height: 100px;
+}
+
+.training-card:hover:not(.locked) {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.training-card.active {
+  border: 2px solid #4e6cff; /* Border biru untuk yang aktif */
+  background-color: #e6f0ff; /* Latar belakang sedikit biru */
+  
+}
+.training-card.active a {
+
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.training-card.locked {
+  background-color: #f0f0f0;
+  color: #aaa;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.training-icon {
+  font-size: 38px;
+  color: #4e6cff;
+  margin-bottom: 8px;
+}
+
+.training-card.locked .training-icon {
+  color: #ccc;
+}
+
+.training-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.training-card.locked .training-label {
+  color: #999;
+}
+
+.info-section {
+  background-color: #f8f8f8;
+  border-left: 5px solid #4e6cff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.info-section h3 {
+  color: #4e6cff;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.info-section p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}

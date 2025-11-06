@@ -1,0 +1,64 @@
+/* =================================== */
+/* === Global Wrapper === */
+/* =================================== */
+body {
+    background-color: #f0f2f5; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.main-wrapper {
+    padding: 20px;
+    
+    /* KUNCI: Meningkatkan lebar maksimum. 768px adalah ukuran tablet. */
+    max-width: 768px; 
+    width: 100%; /* Tetap responsif penuh di HP/Tablet kecil */
+    margin: 0 auto; /* Memusatkan wrapper di tengah layar PC */
+    box-sizing: border-box; 
+}
+
+/* =================================== */
+/* === Card Structure === */
+/* =================================== */
+.card-item {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* =================================== */
+/* === Image Placeholder & Container === */
+/* =================================== */
+.image-placeholder {
+    /* Tinggi 100px mungkin terlalu kecil untuk lebar 768px, 
+       mari kita tingkatkan agar gambar terlihat lebih besar di PC. */
+    height: 200px; 
+    background-color: #e6f0ff; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4e6cff; 
+    overflow: hidden; 
+}
+
+/* === Membuat Foto Menyatu (Fit/Cover), Bagian ATAS terlihat === */
+.card-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: top; /* Memastikan bagian atas gambar yang selalu terlihat */
+    border-radius: 8px; 
+}
+
+/* =================================== */
+/* === Text Style === */
+/* =================================== */
+.card-text {
+    font-size: 14px;
+    color: #555;
+    margin: 0; 
+}

@@ -1,0 +1,171 @@
+/* =================================== */
+/* === Global & Container (RESPONSIF) === */
+/* =================================== */
+body {
+    /* Menggunakan Font dan Background yang sama dengan aplikasi Punch Anda */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5; /* Background Abu-abu Muda */
+    margin: 0;
+    padding: 0;
+    
+    /* Centering App di tengah layar PC */
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; /* Konten dimulai dari atas */
+    min-height: 100vh;
+    width: 100%;
+}
+
+#support-container {
+    width: 100%;
+    max-width: 500px; /* Lebar Maksimal App (SAMA dengan aplikasi Punch) */
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Bayangan di PC */
+}
+
+/* =================================== */
+/* === Header === */
+/* =================================== */
+.support-header-simple {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    /* Border style disesuaikan dengan tema minimalis */
+    border-bottom: 1px solid #ddd; 
+    background-color: #ffffff;
+    box-sizing: border-box; /* Penting untuk konsistensi padding */
+}
+a {
+  text-decoration: none;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 600; /* Dibuat lebih tebal seperti tema utama */
+    color: #3f51b5; /* Warna Biru Utama */
+    margin-right: 20px;
+}
+
+.back-link i {
+    font-size: 1.2em;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.support-header-simple h1 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+/* =================================== */
+/* === Main Content & Card === */
+/* =================================== */
+.support-main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Gunakan flex-grow agar konten vertikal terpusat di layar PC yang tinggi */
+    flex-grow: 1; 
+    min-height: calc(100vh - 50px); /* Memastikan ketinggian di HP */
+}
+
+.support-card {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding: 30px 20px;
+    /* Menghapus background putih dan shadow agar terlihat sebagai bagian dari background utama */
+    background: none; 
+}
+
+.support-icon {
+    font-size: 3.5em;
+    color: #3f51b5; /* Menggunakan warna biru tema utama */
+    margin-bottom: 15px;
+}
+
+.support-card h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #3f51b5; /* Menggunakan warna biru tema utama */
+}
+
+.description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* =================================== */
+/* === Tombol Link (SAMA STYLE) === */
+/* =================================== */
+.support-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px; /* Sudut melengkung yang sama dengan Tombol Start sebelumnya */
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.support-button i {
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+
+/* Style Saweria */
+.support-button.saweria {
+    background-color: #3f51b5; /* Menggunakan warna biru tema utama */
+    color: white;
+}
+
+.support-button.saweria:hover {
+    background-color: #303f9f; /* Biru yang sedikit lebih gelap saat hover */
+    transform: translateY(-2px);
+}
+
+/* Style Discord (Menggunakan warna Discord, tetapi dengan style tombol yang sama) */
+.support-button.discord {
+    background-color: #7289da; /* Discord Blue */
+    color: white;
+}
+
+.support-button.discord:hover {
+    background-color: #6a7ecc;
+    transform: translateY(-2px);
+}
+
+.footer-note {
+    font-size: 0.85em;
+    color: #999;
+    margin-top: 20px;
+}
+
+/* =================================== */
+/* === RESPONSIVE FIX (Mobile) === */
+/* =================================== */
+@media (max-width: 500px) {
+    /* Menghilangkan box-shadow di HP agar menempel ke tepi layar */
+    #support-container {
+        box-shadow: none;
+    }
+    
+    .support-main {
+        /* Memastikan konten mengisi penuh ruang vertikal di HP */
+        min-height: calc(100vh - 50px); 
+        align-items: center;
+        padding-top: 50px; /* Memberi jarak dari header */
+        padding-bottom: 50px;
+    }
+}

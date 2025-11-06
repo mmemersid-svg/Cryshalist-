@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training App</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="style/training.css" />
+  
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <i class="ri-account-circle-line profile-icon"></i>
+      <h3>Account</h3>
+      <p>Don't have account? <span>Sign up</span></p>
+      <button id="closeSidebar" class="close-btn"><i class="ri-close-line"></i></button>
+    </div>
+    <ul class="menu">
+      <li><i class="ri-settings-3-line"><a href="#">Settings</a></i> </li>
+      <li><i class="ri-notification-3-line"><a href="#">notifikasi</a></i> </li>
+      <li><i class="ri-bar-chart-box-line"><a href="#">best score</a></i> </li>
+      <li><i class="ri-cup-line"><a href="#">feedback</a></i> </li>
+      <li><i class="ri-heart-line"><a href="sidebar/support/support.html">Support</a></i> </li>
+      <li><i class="ri-logout-box-line"><a href="#">Exit</a></i> </li>
+    </ul>
+  </div>  <!-- Header -->  <header>
+    <button id="menuBtn" class="menu-btn"><i class="ri-menu-line"></i></button>
+    <h1 id="pageTitle">Home</h1>
+  </header>  <!-- Main content (SPA container) -->  <main id="page-content">
+    <div class="placeholder">Loading page...</div>
+  </main>  <!-- Bottom Navbar -->  <nav class="bottom-nav">
+    <button class="nav-btn" data-target="story">
+      <i class="ri-bus-2-line"></i>
+      <span>Story</span>
+    </button>
+    <button class="nav-btn active" data-target="home">
+      <i class="ri-home-4-line"></i>
+      <span>Home</span>
+    </button>
+    <button class="nav-btn" data-target="training">
+      <i class="ri-flash-fill">🏋️</i>
+      <span>Training</span>
+    </button>
+  </nav>  <!-- Scripts -->  <script src="js/app.js"></script>  <script src="js/sidebar.js"></script></body>
+</html>
